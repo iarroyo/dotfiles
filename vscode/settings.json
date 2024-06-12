@@ -1,0 +1,73 @@
+{
+  //Terminal scroll size
+  "terminal.integrated.scrollback": 1000000,
+
+  // https://code.visualstudio.com/docs/editor/intellisense
+  // Controls if quick suggestions should show up while typing
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+
+  //https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+  //Set prettier as default formatter
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[glimmer-js]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.foldingStrategy": "indentation"
+  },
+  "[glimmer.ts]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.foldingStrategy": "indentation"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+
+  //Prettier doc selectors
+  "prettier.documentSelectors": [
+    "**/*.hbs",
+    "**/*.gts",
+    "**/*.svelte",
+    "**/*.gjs",
+    "**/*.astro"
+  ],
+
+  //Disable format on paste
+  "editor.formatOnPaste": false,
+
+  //Format on save
+  "editor.formatOnSave": true,
+
+  // Actions on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  //Disable vsocde default css,less,scss validation
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
+  "editor.stickyScroll.enabled": true,
+
+  "eslint.probe": [
+    "javascript",
+    "typescript",
+    "glimmer-js", 
+    "glimmer-ts"
+  ],
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "glimmer-ts",
+    "glimmer-js"
+  ],
+
+  "emmet.includeLanguages": {
+    "gts": "html",
+    "gjs": "html"
+  }
+}
